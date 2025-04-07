@@ -14,11 +14,11 @@ def calculate_average(math_score, science_score, english_score):
 def get_grade(average):
     if average >= 90:
         return "A" 
-    elif 90 > average >= 80:
+    elif average >= 80:
         return "B"
-    elif 80 > average >= 70:
+    elif average >= 70:
         return "C"
-    elif 70 > average >= 60:
+    elif average >= 60:
         return "D"
     else:
         return "F"

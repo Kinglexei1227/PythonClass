@@ -21,20 +21,20 @@ if not (1 <= reservation_date <= 30) :
     exit()
 # 이벤트 코드에 따른 예약 조건 체크
 if event_code == 'E1': #E1 을 선택시 나이는 18세이상만 예약가능.
-    if age < 18:
+    if age < 18 :
         print("나이 제한으로 인해 예약할 수 없습니다.")
     else:
         print("예약이 완료되었습니다!")
 
 elif event_code == 'E2': #E2 를 선택시 날짜는 짝수일에만 예약가능.
-    if reservation_date % 2 != 0:
+    if reservation_date % 2 != 0 :
         print("선택하신 날짜에는 예약할 수 없습니다.")
     else:
         print("예약이 완료되었습니다!")
 elif event_code == 'E3': #E3 를 선택시 나이는 16세 이상, 7의 배수은 날짜에만 예약가능.
-    if age < 16:
+    if age < 16 :
         print("나이 제한으로 인해 예약할 수 없습니다.")
-    elif reservation_date % 7 != 0:
+    elif reservation_date % 7 != 0 :
         print("선택하신 날짜에는 예약할 수 없습니다.")
     else:
         print("예약이 완료되었습니다!")
