@@ -1,5 +1,21 @@
-print(type(4))
-print(type(4.0))
-print(type("4"))
-print(type(True))
-print(type(False))
+value = 1
+
+value += 1
+
+print(value)
+
+value *= 3
+
+print(value)
+
+value /= 3
+
+print(value)
+
+value**=10
+
+print(value)
+
+value //=1000
+
+print(value)

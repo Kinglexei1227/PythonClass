@@ -13,8 +13,8 @@ avg = (korean_score + english_score + math_score) / 3
 print(f"평균: {avg:.1f}")
 # 판정
 if avg >= 90 and korean_score >= 80 and english_score >= 80 and math_score >= 80:
-    print("결과: 우수 합격")
+    print("우수 합격")
 elif avg >= 70 and korean_score >=40 and english_score >= 40 and math_score >= 40:
-    print("결과: 합격")
+    print("합격")
 else :
-    print("결과: 불합격")
+    print("불합격")
