@@ -52,7 +52,7 @@ total_amount = amount - discount_amount
 # 결과값 출력
 print(f"기본 가격: {drink_amount}")
 print(f"크기 추가 요금:{size_amount}")
-print(f"할인 적용:{int(discount_amount) if input_membership == "yes" else "없음"}")
+print(f"할인 적용: -{int(discount_amount) if input_membership == "yes" else "없음"}")
 print(f"최종 결제 금액:{int(total_amount)}")
 
 # 멤버십 유무
