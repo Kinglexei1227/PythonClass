@@ -14,11 +14,14 @@ menu = int(input('''
 옵션 (1 또는 2): '''))
 # 반복 설정
 # 1번 옵션
+
 for i in range(1, table+1):
     if menu == 1:
-        for f in range(row):
-            for f in range(col):
-                print(f, end=" ")
+        t = 0
+        for i in range(row):
+            for i in range(col):
+                t += 1
+                print(t, end="\t")
                 
             print()
         print()
@@ -26,6 +29,6 @@ for i in range(1, table+1):
     elif menu == 2:
         for a in range(row):
             for a in range(col):
-                print(random.randint(1,100), end=" ")
+                print(random.randint(1,100), end="\t")
             print()
         print()
