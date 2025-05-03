@@ -4,19 +4,9 @@
 
 # 랜덤 함수
 import random
-ran = random.randint(1,100) # 1 부터 100까지 숫자 설정
-ans = 0
-# 기회 횟수 초기화
-tries = 0
-
-# 맞출때 까지 반복
-while ans != ran:
-    ans = int(input("1부터 100 사이의 숫자를 맞춰보세요: "))
-    # 정답, 오답 설정
-    if ans == ran:
-        print("정답입니다!")
-        break
-    elif ans > ran:
-        print("더 작은 숫자입니다.")
-    elif ans < ran:
-        print("더 큰 숫자입니다.")
+answer = random.randint(1,100)
+# 최대 기회
+total_attempt = 10
+# 최대 10번 반복
+for attempt in range(1, total_attempt + 1):
+    print(f"기회 {attempt}/{total_attempt} - 1부터 100 사이의 숫자를 맞춰보세요 (종료하려면 0 입력): ", end="")
