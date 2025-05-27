@@ -1,7 +1,7 @@
 # matplotlib의 pyplot 모듈을 plt라는 이름으로 임포트
 import matplotlib.pyplot as plt
 
-# 1. 데이터 준비
+# 1. 데이터 준비 (2차원 선형)
 # x는 -10부터 10까지 정수 리스트
 x = [val for val in range(-10, 11)]
 # y는 각 x 값의 제곱(x^2)
