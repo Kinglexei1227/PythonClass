@@ -1,16 +1,15 @@
 import matplotlib.pyplot as plt
 
-# 데이터를 준
-x = range(-10, 11)
-y = [ val**2 for val in x]
 
-# 그래프 종류 선택 후 드로잉
-plt.plot(x, y)
+x = [ val for val in range(-10, 11)]
+y = [val**2 for val in x]
 
+plt.plot(x, y, color = "red")
+plt.plot(x, x, marker='o')
+
+plt.legend()
 plt.title("A graph")
 plt.xlabel("X axis")
 plt.ylabel("Y axis")
-plt.grid(True)
 
-# 그래프 출력
 plt.show()
