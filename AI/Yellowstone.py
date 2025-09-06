@@ -20,6 +20,7 @@ KMeans.fit(X)
 # 클러스터 레이블 및 중심점 추출
 labels = KMeans.labels_                 # 각 샘플이 속한 클러스터 번호 (0 또는 1)
 
+
 centroids = KMeans.cluster_centers_
 
 # 4. Cost Function (SSE: Sum of Squared Errors) 출력
