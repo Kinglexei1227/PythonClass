@@ -17,6 +17,7 @@ cost = stock_sell * stock - total_cost # 판매 예상 이익 혹은 손실 계�
 print(f"구매 후 남은 자본금:{remain_capital}")
 print(f"예상 이익:{cost} ")
 
+
 # 이익 혹은 손실시 출력값
 if cost > 0 :
     print("예상되는 이익입니다.")
