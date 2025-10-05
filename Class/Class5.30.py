@@ -8,4 +8,4 @@ def bar (a, b, c, d, e = 100): # parameter (매개 변수) -> msg
     
 bar(1, 2, 3, 4, 5) # argument (인자값)
 bar(1, 2, 3, 4)
-bar(1, 2, 3)
+bar(1, 2, 3, 4)
